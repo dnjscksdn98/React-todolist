@@ -44,6 +44,7 @@ function todoReducer(state, action) {
 }
 
 // create context
+// separate each context - state, dispatch, id - to optimize
 const TodoStateContext = createContext();
 const TodoDispatchContext = createContext();
 const TodoNextIdContext = createContext();
