@@ -7,7 +7,7 @@ import { useTodoState } from "../TodoContext";
 const TodoListBlock = styled.div`
   flex: 1;
   padding: 20px 32px 48px;
-  overflow-y: auto;
+  overflow-y: auto; /* add a scroll bar if it y-axis overflows */
 `;
 
 function TodoList() {
@@ -15,6 +15,7 @@ function TodoList() {
 
   return (
     <TodoListBlock>
+      {/* add each todo to TodoItem */}
       {todos.map(todo => (
         <TodoItem
           key={todo.id}

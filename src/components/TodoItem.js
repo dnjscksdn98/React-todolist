@@ -85,7 +85,7 @@ function TodoItem({ id, done, text }) {
 
   return (
     <TodoItemBlock>
-      {/* if it's done add done icon */}
+      {/* if it's done add 'done icon' */}
       <CheckCircle done={done} onClick={onToggle}>
         {done && <MdDone />}
       </CheckCircle>
